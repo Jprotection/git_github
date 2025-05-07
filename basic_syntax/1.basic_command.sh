@@ -72,5 +72,18 @@ git revert 최신커밋ID
 # 스택 구조
 git stash
 
-# 저장한 최신 작업목록 꺼내기
+# 저장한 최신 작업목록 꺼내서 적용하기
+# 스택에서 제거
 git stash pop
+
+# 임시저장한 목록은 그대로 유지하면서 특정 index항목 적용
+git stash apply 인덱스번호
+
+# 임시저장한 작업 내용 조회
+git stash show -p 인덱스번호
+
+# 임시저장한 작업목록 조회
+git stash list
+
+# 저장목록 모두 삭제
+git stash clear
