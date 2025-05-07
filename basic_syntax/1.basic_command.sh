@@ -50,3 +50,7 @@ git pull origin 브랜치명
 
 # 원격의 변경사항을 local로 가져오되, 병합은 하지 않는 것
 git fetch origin 브랜치명
+
+# commit1을 기준으로 commit2와의 차이점 출력
+# git diff main origin/main 와 같은 형식으로 origin과의 차이 조회 가능
+git diff commit1 commit2
