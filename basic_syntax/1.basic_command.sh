@@ -37,3 +37,9 @@ git log --all
 # 충돌 무시하고 강제로 push할 때
 # 개인 프로젝트에서는 유용할 수 있으나 팀 프로젝트에서는 절대 사용하면 안됨!!
 git push origin main --force
+
+# 특정 commit ID로 전환 (소스코드를 과거의 특정 버전으로 되돌릴 때)
+git checkout 커밋ID
+
+# 다시 현재 브랜치의 commit으로 되돌아올 때
+git checkout 현재브랜치명(main)
