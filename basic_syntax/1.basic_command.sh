@@ -33,3 +33,7 @@ git log --graph
 
 # main 브랜치 뿐만 아니라 전체 commit 이력 조회
 git log --all
+
+# 충돌 무시하고 강제로 push할 때
+# 개인 프로젝트에서는 유용할 수 있으나 팀 프로젝트에서는 절대 사용하면 안됨!!
+git push origin main --force
