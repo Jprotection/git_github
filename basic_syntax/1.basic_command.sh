@@ -54,3 +54,16 @@ git fetch origin 브랜치명
 # commit1을 기준으로 commit2와의 차이점 출력
 # git diff main origin/main 와 같은 형식으로 origin과의 차이 조회 가능
 git diff commit1 commit2
+
+# git 작업 취소
+# commit 이후의 취소
+git reset head~1
+git reset head^
+# staging area로 까지만 취소
+git reset --soft head~1
+
+# 원격 repo에 push 이후 취소
+# -> commit 메시지 작성 vi화면으로 이동 -> :wq 
+# 원격에 push한 커밋 이력은 수정, 삭제가 안되므로
+# 중요한 비밀번호나 키 값이 노출되었다면 새로운 값으로 변경하는 것이 가장 확실!!
+git revert 최신커밋ID
