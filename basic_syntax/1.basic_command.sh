@@ -18,3 +18,18 @@ git commit -m "메시지타이틀" -m "메시지내용"
 
 # vi에디터 모드에서 작성 : 첫줄에는 제목, 두번째 줄부터 내용
 git commit
+
+# add와 commit을 동시에
+git commit -am "add와 commit을 동시에"
+
+# local repo의 커밋 이력 조회
+git log
+
+# git 로그를 간결하게 조회
+git log --oneline
+
+# git 로그를 그래프 형태로 조회
+git log --graph
+
+# main 브랜치 뿐만 아니라 전체 commit 이력 조회
+git log --all
