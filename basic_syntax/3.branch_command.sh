@@ -14,6 +14,13 @@ git branch
 # 브랜치 삭제 -> 로컬 브랜치만 삭제 -> 원격 브랜치는 별도로 삭제해야 함
 git branch -D 브랜치명
 
+# 브랜치명 변경
+git branch -m 기존브랜치명 새브랜치명
+
+# 로컬에서 원격 트래킹 브랜치 목록을 최신화
+# 존재하지 않는 원격 브랜치를 로컬에서도 삭제
+git fetch -p
+
 # 모든 브랜치 이력사항까지 clone
 # 그냥 clone하면 default 브랜치만 clone
 git clone --mirror 원격레포주소
